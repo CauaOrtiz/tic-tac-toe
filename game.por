@@ -16,6 +16,20 @@ programa {
 			desenhar_painel()
 			g.renderizar()
 		}
+
+		/* Exemplo de matriz representando um tabuleiro jogado
+		caracter tabuleiro[3][3] = {
+			{'X', 'O', 'X'},
+			{'O', 'X', 'O'},
+			{'X', 'O', 'X'}
+		} Tabuleiro sendo impresso usando loops aninhados
+		para(inteiro i = 0; i < 3; i++){
+			para(inteiro j = 0; j < 3; j++){
+				escreva(tabuleiro[i][j])
+			}
+			escreva("\n")
+		}
+		*/
 	}
 
 	funcao montar_janela(){
@@ -43,7 +57,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 310; 
+ * @POSICAO-CURSOR = 532; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

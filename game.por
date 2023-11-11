@@ -94,7 +94,7 @@ programa {
 
 		se(m.posicao_x() < 750 e m.posicao_x() > 50 e m.posicao_y() < 280 e m.posicao_y() > 0 e m.ler_botao() == 0){
 			desenhar_circulo(600, 100) // vai ser substituída por uma função desenhar_jogada() que vai receber o símbolo e chamar desenhar_circulo ou desenhar_x
-		}
+		} // TO DO: adicionar jogada ao vetor de jogadas na posição [o][2]
 	}
 }
 
@@ -103,7 +103,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2371; 
+ * @POSICAO-CURSOR = 2440; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

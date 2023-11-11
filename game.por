@@ -16,8 +16,9 @@ programa {
 			pintar_janela()
 			desenhar_painel()
 			desenhar_tabuleiro()
-			desenhar_circulo(100, 100)
+			desenhar_circulo(125, 125)
 			desenhar_x(350, 350)
+			ler_jogadas()
 			g.renderizar()
 		}
 
@@ -78,6 +79,7 @@ programa {
 		inteiro amarelo = g.criar_cor(255, 207, 48)
 		g.definir_cor(amarelo)
 		g.desenhar_elipse(x, y, 100, 100, falso)
+
 	}
 
 	funcao desenhar_x(inteiro x, inteiro y){
@@ -90,7 +92,9 @@ programa {
 
 	funcao ler_jogadas(){
 
-		escreva(m.ler_botao())
+		se(m.posicao_x() < 750 e m.posicao_x() > 50 e m.posicao_y() < 280 e m.posicao_y() > 0 e m.ler_botao() == 0){
+			desenhar_circulo(600, 100) // vai ser substituída por uma função desenhar_jogada() que vai receber o símbolo e chamar desenhar_circulo ou desenhar_x
+		}
 	}
 }
 
@@ -99,7 +103,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 417; 
+ * @POSICAO-CURSOR = 2371; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

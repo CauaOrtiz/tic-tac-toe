@@ -11,6 +11,9 @@ programa {
 	caracter vencedor = 'X'
 	
 	funcao inicio() {
+
+		inteiro tabuleiro[3][3]
+		
 		montar_janela()
 		enquanto(verdadeiro){
 			pintar_janela()
@@ -104,7 +107,7 @@ programa {
 			a - serão 9 "se" que vão validar o quadrado jogado
 			b - cada "se" vai chamar a função desenhar_jogada(), que por sua vez recebe o símbolo e preenche o tabuleiro
 			c - cada "se" vai adicionar a jogada à matriz
-		4 - criar função vencedor() que vai verificar se existe alguma combinação que resulte em vitória (de acordo com o vídeo), e exibir uma mensagem com o símbolo vencedor
+		4 - criar função vencedor() que vai verificar se existe alguma combinação que resulte em vitória (de acordo com o vídeo), e exibir uma mensagem com o símbolo vencedor\
 		*/
 }
 
@@ -113,7 +116,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2976; 
+ * @POSICAO-CURSOR = 772; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

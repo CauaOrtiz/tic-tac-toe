@@ -1,0 +1,22 @@
+0x0			0x1			0x2
+
+minX = 49		minX = 	283		minX = 517
+maxX = 283		maxX = 	517		maxX = 751
+minY = 49		minY = 	49		minY = 49
+maxY = 283		maxY =	283		maxY = 283
+
+
+1x0			1x1			1x2
+
+minX = 49		minX = 283		minX = 517
+maxX = 283		maxX = 517		maxX = 751
+minY = 283		minY = 283		minY = 283
+maxY = 517		maxY = 517		maxY = 517
+
+
+2x0			2x1			2x2
+
+minX = 49		minX = 283		minX = 517
+maxX = 283		maxX = 517		maxX = 751
+minY = 517		minY = 517		minY = 517
+maxY = 751		maxY = 751		maxY = 751

@@ -94,8 +94,18 @@ programa {
 
 		se(m.posicao_x() < 750 e m.posicao_x() > 50 e m.posicao_y() < 280 e m.posicao_y() > 0 e m.ler_botao() == 0){
 			desenhar_circulo(600, 100) // vai ser substituída por uma função desenhar_jogada() que vai receber o símbolo e chamar desenhar_circulo ou desenhar_x
-		} // TO DO: adicionar jogada ao vetor de jogadas na posição [o][2]
+		}
 	}
+		/*
+		TODO:
+		1 - criar uma matriz que vai armazenar as jogadas (talvez inicializar com todas as posições=*)
+		2 - mapear cada quadrado do tabuleiro na funcao ler_jogadas()
+		3 - refatorar a função ler_jogadas():
+			a - serão 9 "se" que vão validar o quadrado jogado
+			b - cada "se" vai chamar a função desenhar_jogada(), que por sua vez recebe o símbolo e preenche o tabuleiro
+			c - cada "se" vai adicionar a jogada à matriz
+		4 - criar função vencedor() que vai verificar se existe alguma combinação que resulte em vitória (de acordo com o vídeo), e exibir uma mensagem com o símbolo vencedor
+		*/
 }
 
 /* $$$ Portugol Studio $$$ 
@@ -103,7 +113,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2440; 
+ * @POSICAO-CURSOR = 2976; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -81,12 +81,28 @@ programa {
 
 	funcao ler_jogadas(){
 
-		se(m.posicao_x() < 283 e m.posicao_x() > 49 e m.posicao_y() < 283 e m.posicao_y() > 49 e m.ler_botao() == 0){
-			desenhar_circulo(120, 120) // vai ser substituída por uma função desenhar_jogada() que vai receber o símbolo e chamar desenhar_circulo ou desenhar_x
-		} senao se (m.posicao_x() < 517 e m.posicao_x() > 283 e m.posicao_y() < 283 e m.posicao_y() > 49 e m.ler_botao() == 0){
-			desenhar_circulo(320, 120)
+		inteiro botao = 0
+
+		se(m.posicao_x() < 283 e m.posicao_x() > 49 e m.posicao_y() < 283 e m.posicao_y() > 49){
+			escolha(m.ler_botao()){
+				caso 0:
+					desenhar_circulo(120, 120)
+					pare
+				caso 1:
+					desenhar_x(120, 120)				
+			}
+			
+		} senao se (m.posicao_x() < 517 e m.posicao_x() > 283 e m.posicao_y() < 283 e m.posicao_y() > 49){
+			escolha(m.ler_botao()){
+				caso 0:
+					desenhar_circulo(320, 120)
+					pare
+				caso 1:
+					desenhar_x(320, 120)					
+			}
+			
 		} senao se (m.posicao_x() < 751 e m.posicao_x() > 517 e m.posicao_y() < 283 e m.posicao_y() > 49){
-			escolha(m.ler_botao()){	// OU a função_desenhar_jogada() OU essa validação por botão (problema: usuário apertar botão errado)
+			escolha(m.ler_botao()){
 				caso 0:
 					desenhar_circulo(600, 120)
 					pare
@@ -113,7 +129,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2457; 
+ * @POSICAO-CURSOR = 2051; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
